@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+	<script src="app.js"></script>
+
+<body ng-app="app">
+	<h1>Check Writer</h1>
+	<p>Please enter amount in the textbox</p>
+	<input type="text" class="form-control" ng-model="name" text-maxlength="10" numbers-only />
+	{{name | convertToWords  }}
+</body>
+</html>
